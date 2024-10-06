@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blubber</title>
+    <meta name="description" content="Dive into the fun with Blubber, an exciting web game where you navigate challenges and aim for high scores! This game was developed by T€N0C0">
+    <meta name="keywords" content="Blubber, web game, fun, challenge, high score, T€N0C0">
+    <meta name="author" content="T€N0C0">
+    <link rel="icon" type="image/jpeg" href="icon.jpg">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="game-container">
+        <canvas id="game-canvas"></canvas>
+        <div id="ui" class="hidden">
+            <h1>Blubber</h1>
+            <div id="scores">
+                <div>High Score: <span id="highScore">0</span></div>
+                <div>Current Score: <span id="currentScore">0</span></div>
+            </div>
+        </div>
+        <div id="menu">
+            <div id="home-section">
+                <h2>Blubber</h2>
+                <button id="start-button">Start Game</button>
+                <button id="difficulty-button">Select Difficulty</button>
+            </div>
+            <div id="difficulty-section" class="hidden">
+                <h2>Select Difficulty</h2>
+                <button id="easy-button" class="difficulty-button">Easy</button>
+                <button id="normal-button" class="difficulty-button">Normal</button>
+                <button id="hard-button" class="difficulty-button">Hard</button>
+                <button id="back-button">Back</button>
+            </div>
+        </div>
+        <div id="game-over" class="hidden">
+            <h2>Game Over!</h2>
+            <p>Your Score: <span id="finalScore"></span></p>
+            <button id="restart-button">Play Again</button>
+            <button id="main-menu-button">Main Menu</button>
+        </div>
+        <div id="pause-menu" class="hidden">
+            <h2>Game Paused</h2>
+            <button id="resume-button">Resume</button>
+            <button id="reset-button">Reset Game</button>
+            <button id="pause-difficulty-button">Change Difficulty</button>
+        </div>
+        <div id="new-high-score" class="hidden">New High Score!</div>
+        <button id="pause-button" class="hidden">Pause</button>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/js-cookie/3.0.1/js.cookie.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
